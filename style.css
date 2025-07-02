@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #47b8cc, #cdf8fa);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: #ffffffcc;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}v
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.searchBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#cityInput {
+    padding: 10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: 70%;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+#cityInput:focus {
+    outline: none;
+    border-color: #4a90e2;
+}
+
+/* Icon-only Search Button Styling */
+.search-btn {
+    width: 44px;
+    height: 44px;
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-btn:hover {
+    background-color: #3a78c2;
+    transform: scale(1.05);
+}
+
+
+.location-not-found{
+    margin-top: 20px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.location-not-found h1{
+    font-size: 20px;
+    color: #6b6b6b;
+    margin-block-end: 15px;
+}
+
+.location-not-found img{
+    width: 80%;
+}
+
+.WeatherBox {
+    margin-top: 20px;
+    display: none;
+}
+
+#weatherIcon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.WeatherInfo .temperature {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.WeatherInfo .description {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.details .humidity,
+.details .wind {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #333;
+}
+
+.details i {
+    font-size: 1.5rem;
+    color: #4a90e2;
+}
+
+.details .text span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.details .text p {
+    font-size: 0.9rem;
+    color: #666;
+}
